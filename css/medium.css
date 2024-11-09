@@ -1,0 +1,69 @@
+.all_places {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.single_place {
+    width: 48%;
+}
+
+.single_place img {
+    height: 248px;
+    object-fit: cover;
+}
+
+.single_place:last-child {
+    margin: 10px 0px;
+}
+
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter_box {
+    width: 90%;
+    max-width: 760px;
+}
+
+form div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+form div input:first-child {
+    margin-right: 5px;
+}
+
+.accordion {
+    max-width: 760px;
+    width: 90%;
+}
+
+.accordion_box {
+    margin: 10px 0;
+}
+
+.all_contacts, .all_comments {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+
+.single_contact, .single_comment {
+    width: 32%;
+}
+
+.map iframe {
+    width: 90%;
+    max-width: 760px;
+}

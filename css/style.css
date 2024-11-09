@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h3 {
+    padding: 5px;
+}
+
+.a_btn {
+    background-color: #2e4b4b;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 25px;
+    border: 2px solid #2e4b4b;
+    transition: 0.3s;
+}
+
+.a_btn:hover {
+    background-color: white;
+    border: 2px solid #2e4b4b;
+    color: #2e4b4b;
+}
+
+/* ----------------------------------------------------------- */
+
+/* header */
+
+header {
+    padding: 20px;
+    background-image: url('../img/tower-bridge.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 20% center;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header a {
+    align-self: center;
+}
+
+.places_to_see {
+    padding: 20px;
+}
+
+.single_place {
+    width: 100%;
+    margin: 10px 0;
+    background-color: white;
+}
+
+.single_place:last-child {
+    margin-bottom: 0px;
+}
+
+.place {
+    width: 100%;
+    height: 250px;
+    justify-content: flex-end;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.place h4 {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: #000000a8;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.eye {
+    background-image: url('../img/eye.jpg');
+}
+
+.big_ben {
+    background-image: url('../img/big-ben.jpg');
+}
+
+.bridge {
+    background-image: url('../img/tower-bridge.jpg');
+}
+
+.museum {
+    background-image: url('../img/museum.jpg');
+}
+
+.single_place *{
+    margin-bottom: 10px;
+}
+
+.single_place p{
+    text-align: center;
+}
+
+/* sekcja newslettera */
+.newsletter {
+    background-color: #5f9ea0;
+    padding: 20px;
+    margin-top: 15px;
+}
+
+.newsletter p {
+    margin: 10px 0;
+}
+
+form input[type="text"],
+form input[type="email"] {
+    display: inline-block;
+    width: 100%;
+    margin: 5px 0;
+    height: 30px;
+    padding: 0 0 0 10px;
+    font-size: 14px;
+}
+
+form input[type="checkbox"] {
+    color: rgb(46, 75, 75);
+    font-size: 16px;
+}
+
+.newsletter button {
+    display: inline-block;
+    width: 100%;
+    border-radius: 25px;
+    margin: 10px 0;
+    padding: 10px;
+    border: 2px solid rgb(46, 75, 75);
+    font-size: 16px;
+    background-color: rgb(46, 75, 75);
+    color: white;
+    transition: 0.3s;
+}
+
+.newsletter button:hover {
+    background-color: #fff;
+    color: #2e4b4b;
+    border: 2px solid cadetblue;
+}
+
+/* sekcja kontaktu */
+.contact {
+    margin-top: 15px;
+}
+
+.single_contact {
+    margin-top: 15px;
+}
+
+.single_contact i {
+    color: #5f9ea0;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+/* sekcja komentarzy */
+.comments {
+    padding: 20px;
+    background-image: url('../img/tower-bridge.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 15px;
+}
+
+.comments h3.h3 {
+    color: #ffffff;
+}
+
+.single_comment {
+    margin-top: 15px;
+    text-align: center;
+    background-color: #ffffff8a;
+    padding: 25px 15px;
+}
+
+.single_comment p:first-child {
+    line-height: 1.5;
+}
+
+.single_comment p:last-child {
+    margin-top: 20px;
+    text-align: right;
+    width: 100%;
+    font-weight: bold;
+}
+
+/* sekcja FAQ */
+
+.faq {
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+.accordion {
+    width: 90%;
+    margin-top: 10px;
+}
+
+.accordion_box {
+    margin: 10px;
+    border-top: 1px solid #808080;
+}
+
+.accordion_box:last-child {
+    border-bottom: 1px solid #808080;
+}
+
+.accordion_btn {
+    width: 100%;
+    text-align: left;
+    padding: 10px 0;
+    font-size: 18px;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion_btn:hover {
+    cursor: pointer;
+}
+
+.fa-chevron-down {
+    transition: 0.3s;
+}
+
+.accordion_info {
+    display: none;
+    transition: 0.3s;
+}
+
+.accordion_text {
+    padding: 5px 0 15px 0;
+}
+
+.active_accordion_box {
+    display: block;
+}
+
+.active_accordion_btn {
+    transform: rotate(180deg);
+    color: #5f9ea0;
+}
+
+.accordion .a_btn {
+    margin: 20px 0;
+}
+
+/* sekcja mapy */
+.map {
+    margin-top: 15px;
+}
+
+.map iframe {
+    width: 90%;
+    margin-top: 15px;
+} 
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.author_info {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #ffffff98;
+    padding-top: 20px;
+    width: 100%;
+}

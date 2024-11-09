@@ -1,0 +1,12 @@
+.single_place {
+    width: 23%;
+}
+
+.single_place img {
+    height: 248px;
+    object-fit: cover;
+}
+
+.all_contacts, .all_comments {
+    max-width: 760px;
+}
